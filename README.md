@@ -11,7 +11,7 @@ The pre-trained model for Unet trained on 10% CAD data can be downloaded here: h
 
 The pre-trained model for the Unet trained on complete real data can be downloaded here:https://drive.google.com/file/d/1AGNZm-OVm6gnVgu91DmoGeaWxBn5YoHO/view?usp=sharing
 
-The pre-trained model for Pix2Pix GAN can be downloaded here: 
+The pre-trained model for Pix2Pix GAN can be downloaded here:https://drive.google.com/file/d/1NDim5AfTyd824j72d6luY01wDHyqrvXL/view?usp=sharing
 
 ## Run the script
 To generate the main results use the notebook generate_results and change the path to the data and the trained model to fit your set-up.
