@@ -13,7 +13,11 @@ The pre-trained model for Unet trained on 10% CAD data can be downloaded here: h
 
 The pre-trained model for the Unet trained on complete real data can be downloaded here:https://drive.google.com/file/d/1AGNZm-OVm6gnVgu91DmoGeaWxBn5YoHO/view?usp=sharing
 
-The pre-trained model for Pix2Pix GAN can be downloaded https://drive.google.com/file/d/1NDim5AfTyd824j72d6luY01wDHyqrvXL/view?usp=sharing
+The pre-trained model for Pix2Pix GAN can be downloaded;
+With CE:
+https://drive.google.com/file/d/1DAq8XmKCKY4Dz6HQjYoaIK9mekc3WeYH/view?usp=sharing
+With Focal Loss:
+https://drive.google.com/file/d/1NDim5AfTyd824j72d6luY01wDHyqrvXL/view?usp=sharing
 
 Link to wandb: https://wandb.ai/team0deloitte?shareProfileType=copy
 ## Run the script
