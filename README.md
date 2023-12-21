@@ -20,6 +20,8 @@ With CE: https://drive.google.com/file/d/1DAq8XmKCKY4Dz6HQjYoaIK9mekc3WeYH/view?
 With Focal Loss: https://drive.google.com/file/d/1NDim5AfTyd824j72d6luY01wDHyqrvXL/view?usp=sharing
 
 Link to wandb: https://wandb.ai/team0deloitte?shareProfileType=copy
+
+Link to file with augmented real cars https://drive.google.com/drive/folders/13F8FBMJ7Tr1YP2U-FPDLas0aQlwr4xvI
 ## Run the script
 To generate the main results use the notebook generate_results and change the path to the data and the trained model to fit your set-up.
 
