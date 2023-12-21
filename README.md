@@ -1,5 +1,6 @@
 ## Segmentation of Car parts 
 Deep learning project for course 02456 at DTU
+Ida Puggaard (s204211), Caroline B. Jeppesen (s204254), Luca D'Este (s233231), Christian Hvilshøj (s233499)
 
 The project involves segmentation of car parts in collaboration with Deloitte consulting using Unet and Pix2Pix GAN.
 
