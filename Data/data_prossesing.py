@@ -120,7 +120,6 @@ print(np.shape(test))
 # Changing backgrounds to real cars
 ##########
 
-
 def car_data_load(Path_to_data, Path_to_landscapes, num_train, num_test):
 
     # Load Landscapes
@@ -140,8 +139,19 @@ def car_data_load(Path_to_data, Path_to_landscapes, num_train, num_test):
     real_space=total_real//num_train
 
     train_array=[]
+    test_array=[]
 
-    for i in range(0, num_train*real_space, real_space):
+    # Load Test Data First
+    for i in range(0, test_num):
+        car_im=np.load(os.path.join(Path_to_data, dir_list[i]))
+        test_array.append(car_im)
+        print(dir_list[i])
+
+    # Save data in npy file
+    np.save('Prossed_data_test_ny_real.npy',np.array(test_array))
+
+    # Load Train Data
+    for i in range(test_num, num_train*real_space + test_num, real_space):
         car_im=np.load(os.path.join(Path_to_data, dir_list[i]))
         # Removing background from car image
         car_front=remove(car_im[:,:,0:3])
@@ -160,25 +170,20 @@ def car_data_load(Path_to_data, Path_to_landscapes, num_train, num_test):
             else:
                 print(f"Unable to load image: {os.path.join(Path_to_landscapes, land_dir_list[l])}")
 
-    test_array=[]
-
+    # Save data in npy file
     np.save('Prossed_data_train_ny_real.npy',np.array(train_array))
 
-    for i in range(num_train*real_space, total_real):
-        car_im=np.load(os.path.join(Path_to_data, dir_list[i]))
-        test_array.append(car_im)
-        print(dir_list[i])
-
-    # Save data in npy file
-    np.save('Prossed_data_test_ny_real.npy',np.array(test_array))
     return np.array(train_array), np.array(test_array)
-
-path=''
-path_1=''
+path='cropped'
+path_1='carseg_data/real_arrays'
 
 train, test = car_data_load(path_1, path, 138, 30)
 print(np.shape(train))
 print(np.shape(test))
+
+# Plot the first image in the train array
+plt.imshow(train[0,:,:,:3])
+plt.show()
 
 # Plot the first image in the train array
 plt.imshow(train[0,:,:,:3])
